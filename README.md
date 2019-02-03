@@ -1,7 +1,7 @@
 # Snippets
 Code snippets for some CV/NLP/DL tasks.
 
-* remove_whitespace_from_image.py
+* remove_whitespace_from_image.py <br/>
   -code to trim the extra whitespace in the bboxes
   Description of the code:
     We read in the image, but we also convert to grayscale as your image is in colour for some reason. The tricky part is the third line of code where I threshold below the intensity of 128 so that the dark text becomes white. This however produces a binary image, so I convert to uint8, then scale by 255. This essentially inverts the text.
